@@ -63,11 +63,11 @@ body {
 }
 #result {
   position: fixed;
-  top: 10%; 
+  top: 50%; 
   left: 50%;
   transform: translate(-50%, -50%);
-  height: 250px;
-  width: 400px;
+  height: 300px;
+  width: 500px;
   background-color: #171717;
   border-radius: 15px;
   border: 2px solid #9dffad;
@@ -178,7 +178,9 @@ button {
   position: fixed;
   top: 0;
 }
-
+.margine-fixed{
+  margin-bottom: 15px;
+}
 @media only screen and (max-width: 700px) {
   #histories {
     display: flex;

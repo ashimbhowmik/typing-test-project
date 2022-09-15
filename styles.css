@@ -141,6 +141,10 @@ button {
   cursor: pointer;
 }
 #open-blog{
+  color: white;
+  font-weight: 900;
+}
+#clear-all{
   color: red;
   font-weight: 900;
 }
@@ -205,4 +209,10 @@ button {
 
 .remove-size{
   cursor: pointer;
+}
+#remove-all{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  font-size: 22px;
 }

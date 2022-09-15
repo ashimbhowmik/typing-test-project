@@ -37,7 +37,7 @@ function displayHistory() {
     <p class="margine-fixed">You took: <span class="bold">${test.timeTaken}</span> seconds</p>
       <div class="card-design ">
       <p>You made <span class="bold red">${test.errorCount}</span> mistakes</p>
-      <i id="remove-size" class="fa-solid fa-trash-can remove-size" onclick="removeStorage(${test.id})"></i>
+      <i class="fa-solid fa-trash-can remove-size" onclick="removeStorage(${test.id})"></i>
       </div>
     </div>
   `;
@@ -49,10 +49,14 @@ const removeStorage = (id) => {
   let data = JSON.parse(localStorage.getItem("testHistory")) || [];
   let newData = data.filter((x) => x.id !== id);
   localStorage.setItem("testHistory", JSON.stringify(newData));
-  window.location.reload()
+  window.location.reload();
 };
 
-document.getElementById('open-blog').addEventListener('click', function () {
-  window.location.href = 'blog.html';
+const clearAll = () => {
+  localStorage.clear("testHistory");
+  window.location.reload();
+}
+document.getElementById("open-blog").addEventListener("click", function () {
+  window.location.href = "blog.html";
 })
 

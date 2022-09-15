@@ -7,7 +7,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/daisyui@2.24.0/dist/full.css" rel="stylesheet" type="text/css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
-    <link rel="stylesheet" href="css/index.css">
     <link href="https://cdn.jsdelivr.net/npm/daisyui@2.27.0/dist/full.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
     <title>BLog</title>
@@ -60,6 +59,36 @@
         </div>
     </header>
     <hr>
+    <main class="container mx-auto py-6 bg-base-100 h-screen">
+        <div class="flex justify-center items-center lg:mt-20 mt-10">
+            <div class="w-11/12 max-w-full ">
+                <h1 class="mb-4 lg:text-3xl text-orange-400 text-xl">1. Difference between var , let and const ?
+                </h1>
+                <p class="mb-4 lg:text-xl">Ans : Variables declared with var and const are scoped to the
+                    immediate function body.
+                    Variables declared with the var keyword are hoisted. Hoisting means that the
+                    variable can be accessed in their enclosing scope even before they are declared.
+                    Variables declared with the let keyword are block-scoped, which means the variables
+                    will have scope to the immediate enclosing block.</p>
+                <h1 class="mb-4 lg:text-3xl text-orange-400">2. Difference between arrow function and regular
+                    function ?
+                </h1>
+                <p class="mb-4 lg:text-xl ">Ans : An arrow function is also known as the fat arrow function. It
+                    is a
+                    new feature introduced in ES6 that is a more concise syntax for writing function
+                    expressions. Both regular JavaScript functions and arrow functions work in a similar
+                    manner but there are some differences between them. Let's see the differences below:
+                    1.Syntax 2.Arguments binding 3.Use of this keyword 4.Using a new keyword</p>
+                <h1 class="mb-4 lg:text-3xl text-orange-400 text-xl">3. Why we use template string in Javascript ?
+                </h1>
+                <p class="lg:text-xl">Ans : Template literals are literals delimited with backtick (`) characters,
+                    allowing
+                    for multi-line strings, for string interpolation with embedded expressions, and for
+                    special constructs called tagged templates</p>
+
+            </div>
+        </div>
+    </main>
     <footer class="btm-nav bg-base-100">
         <button>
             <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
@@ -83,7 +112,7 @@
             </svg>
         </button>
     </footer>
-
+    <script src="open.js"></script>
 </body>
 
 </html>

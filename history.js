@@ -39,3 +39,7 @@ function displayHistory() {
     histories.appendChild(newRow);
   });
 }
+
+document.getElementById('open-blog').addEventListener('click', function () {
+  window.location.href = 'blog.html';
+})

@@ -168,6 +168,10 @@ button {
   backdrop-filter: blur(5px);
   margin-bottom: 30px;
 }
+.card-design{
+  display: flex;
+  justify-content: space-between;
+}
 
 #modal-background {
   background: rgb(255, 255, 255);
@@ -197,4 +201,8 @@ button {
   .card {
     flex-direction: column;
   }
+}
+
+.remove-size{
+  cursor: pointer;
 }

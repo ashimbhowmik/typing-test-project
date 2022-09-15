@@ -62,29 +62,34 @@
     <main class="container mx-auto py-6 bg-base-100 h-screen">
         <div class="flex justify-center items-center lg:mt-20 mt-10">
             <div class="w-11/12 max-w-full ">
-                <h1 class="mb-4 lg:text-3xl text-orange-400 text-xl">1. Difference between var , let and const ?
+                <h1 class="mb-4 lg:text-3xl text-orange-400 text-xl">1. What is the difference between local storage and
+                    session storage?
                 </h1>
-                <p class="mb-4 lg:text-xl">Ans : Variables declared with var and const are scoped to the
-                    immediate function body.
-                    Variables declared with the var keyword are hoisted. Hoisting means that the
-                    variable can be accessed in their enclosing scope even before they are declared.
-                    Variables declared with the let keyword are block-scoped, which means the variables
-                    will have scope to the immediate enclosing block.</p>
-                <h1 class="mb-4 lg:text-3xl text-orange-400">2. Difference between arrow function and regular
-                    function ?
+                <p class="mb-4 lg:text-xl">Ans : localStorage and sessionStorage are almost identical and have the same
+                    API. The difference is that with sessionStorage , the data is persisted only until the window or tab
+                    is closed. With localStorage , the data is persisted until the user manually clears the browser
+                    cache or until your web app clears the data.</p>
+                <h1 class="mb-4 lg:text-3xl text-orange-400">2. What is the difference between Global scoped and block
+                    scoped?
                 </h1>
-                <p class="mb-4 lg:text-xl ">Ans : An arrow function is also known as the fat arrow function. It
-                    is a
-                    new feature introduced in ES6 that is a more concise syntax for writing function
-                    expressions. Both regular JavaScript functions and arrow functions work in a similar
-                    manner but there are some differences between them. Let's see the differences below:
-                    1.Syntax 2.Arguments binding 3.Use of this keyword 4.Using a new keyword</p>
-                <h1 class="mb-4 lg:text-3xl text-orange-400 text-xl">3. Why we use template string in Javascript ?
+                <p class="mb-4 lg:text-xl ">Ans :In a browser environment, the global scope is controlled by the window
+                    object while in Node. js, it's controlled by the global object. Block scopes are what you get when
+                    you use if statements, for statements, and the like.</p>
+                <h1 class="mb-4 lg:text-3xl text-orange-400">3. What is the difference between Global scoped and block
+                    scoped?
                 </h1>
-                <p class="lg:text-xl">Ans : Template literals are literals delimited with backtick (`) characters,
-                    allowing
-                    for multi-line strings, for string interpolation with embedded expressions, and for
-                    special constructs called tagged templates</p>
+                <p class="mb-4 lg:text-xl ">Ans :In a browser environment, the global scope is controlled by the window
+                    object while in Node. js, it's controlled by the global object. Block scopes are what you get when
+                    you use if statements, for statements, and the like.</p>
+                <h1 class="mb-4 lg:text-3xl text-orange-400 text-xl">4. How many way we get undefined in JavaScript?
+                </h1>
+                <p class="lg:text-xl">Ans : i) The undefined is a primitive type that has a single value undefined. <br>
+                    ii) Accessing an uninitialized variable returns undefined.<br>
+                    iii) Accessing a non-existing property of an object returns undefined.<br>
+                    iv) Accessing a out-of-bounds array element returns undefined.<br>
+                    v) A function without a return statement or with a return statement but without an expression
+                    returns
+                    undefined.</p>
 
             </div>
         </div>
